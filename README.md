@@ -9,12 +9,12 @@ Chatbot bisa diajak ngobrol secara umum, menyimpan konteks percakapan sementara 
 
 ### 1️⃣ Jalankan Backend
 
--dapatkan api gemini di https://aistudio.google.com/
--simpan API_KEY
--masuk folder backend
--ubah .env.example menjadi .env
--ubah GEMINI_API_KEY=YOUR_GEMINI_API_KEY
--setelah itu ubah menjadi API_KEY gemini mu
+- dapatkan api gemini di https://aistudio.google.com/
+- simpan API_KEY
+- masuk folder backend
+- ubah .env.example menjadi .env
+- ubah GEMINI_API_KEY=YOUR_GEMINI_API_KEY
+- setelah itu ubah menjadi API_KEY gemini mu
 
 ```bash
 cd backend
