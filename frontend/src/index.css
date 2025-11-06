@@ -1,0 +1,148 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+}
+html,
+body,
+#root {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  background: #0b1020;
+  color: #e6e6eb;
+}
+
+.app {
+  max-width: 920px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100%;
+  gap: 10px;
+  padding: 12px;
+}
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #0f162e;
+  border: 1px solid #1b2448;
+  padding: 10px 14px;
+  border-radius: 14px;
+}
+.title {
+  font-weight: 700;
+}
+.actions {
+  display: flex;
+  gap: 8px;
+}
+.actions .ghost {
+  background: #0b1020;
+  border: 1px solid #1b2448;
+  color: #cbd5e1;
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.actions .ghost:hover {
+  background: #131a36;
+}
+
+.chat {
+  background: #0f162e;
+  border: 1px solid #1b2448;
+  border-radius: 14px;
+  padding: 16px;
+  overflow-y: auto;
+}
+.row {
+  display: flex;
+  margin: 8px 0;
+}
+.row.user {
+  justify-content: flex-end;
+}
+.row.assistant {
+  justify-content: flex-start;
+}
+.bubble {
+  max-width: 75%;
+  padding: 10px 12px;
+  border-radius: 14px;
+  border: 1px solid #263159;
+  line-height: 1.4;
+  white-space: pre-wrap;
+}
+.row.user .bubble {
+  background: #243358;
+  color: #e6f3ff;
+  border-color: #2e457a;
+}
+.row.assistant .bubble {
+  background: #121b38;
+  color: #e5e7eb;
+  border-color: #22305f;
+}
+
+.typing {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+}
+.dot {
+  width: 6px;
+  height: 6px;
+  background: #9aa7c7;
+  border-radius: 999px;
+  display: inline-block;
+  animation: blink 1.2s infinite ease-in-out;
+}
+.dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+@keyframes blink {
+  0%,
+  80%,
+  100% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 1;
+  }
+}
+
+.composer {
+  display: flex;
+  gap: 10px;
+  background: #0f162e;
+  border: 1px solid #1b2448;
+  border-radius: 14px;
+  padding: 10px;
+}
+.composer input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #22305f;
+  background: #0b1020;
+  color: #e6e6eb;
+}
+.composer .send {
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 1px solid #2e7c67;
+  background: #2dd4bf;
+  color: #052b27;
+  font-weight: 700;
+  cursor: pointer;
+}
+.composer .send:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
