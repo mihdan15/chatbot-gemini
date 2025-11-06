@@ -58,13 +58,13 @@ Frontend jalan di `http://localhost:5173`
 chatbot-project/
 ├─ backend/
 │  ├─ src/
-│  │  ├─ server.ts      # API utama & penyimpanan konteks chat
-│  │  └─ gemini.ts      # Pemanggilan model Gemini
+│  │  ├─ server.ts     
+│  │  └─ gemini.ts      
 │  ├─ package.json
 │  └─ .env.example
 └─ frontend/
    ├─ src/
-   │  ├─ App.tsx         # UI chatbot
+   │  ├─ App.tsx        
    │  ├─ main.tsx
    │  └─ index.css
    ├─ package.json
@@ -96,11 +96,7 @@ Response:
 ## 🧠 Teknologi
 
 - Backend: Node.js, Express.js, TypeScript
-- Frontend: React, Vite, Tailwind (CSS custom)
+- Frontend: React, Vite, Tailwind 
 - AI: Google Gemini 2.5 Flash (`@google/genai`)
 
----
 
-## 📜 Lisensi
-
-MIT License — bebas dipakai dan dikembangkan kembali.
